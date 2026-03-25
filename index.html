@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O Cavalquinha – Stand-Up Comedy</title>
+  <meta name="description" content="O Cavalquinha – Stand-up comedian brasileiro. Shows, agenda e muito humor." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">O Cavalquinha</a>
+      <ul class="nav__links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#shows">Shows</a></li>
+        <li><a href="#videos">Vídeos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a href="#shows" class="btn btn--outline nav__cta">Ver Shows</a>
+      <button class="nav__hamburger" aria-label="Menu" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobile-menu">
+      <a href="#sobre">Sobre</a>
+      <a href="#shows">Shows</a>
+      <a href="#videos">Vídeos</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__noise"></div>
+    <div class="hero__content">
+      <p class="hero__tag">Stand-Up Comedy</p>
+      <h1 class="hero__title">O<br>Cavalquinha</h1>
+      <p class="hero__subtitle">O humor que você não sabia que precisava,<br>mas agora não consegue viver sem.</p>
+      <div class="hero__actions">
+        <a href="#shows" class="btn btn--primary">Ver Agenda</a>
+        <a href="https://www.instagram.com/ocavalquinha" target="_blank" rel="noopener" class="btn btn--ghost">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+    <div class="hero__img-wrap">
+      <div class="hero__img-placeholder">
+        <span>📸</span>
+        <p>Sua foto aqui</p>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stats__inner">
+      <div class="stat">
+        <span class="stat__number" data-target="500">0</span><span class="stat__plus">k+</span>
+        <p>Seguidores</p>
+      </div>
+      <div class="stat">
+        <span class="stat__number" data-target="200">0</span><span class="stat__plus">+</span>
+        <p>Shows realizados</p>
+      </div>
+      <div class="stat">
+        <span class="stat__number" data-target="5">0</span><span class="stat__plus">+</span>
+        <p>Anos de carreira</p>
+      </div>
+      <div class="stat">
+        <span class="stat__number" data-target="30">0</span><span class="stat__plus">+</span>
+        <p>Cidades visitadas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="about" id="sobre">
+    <div class="about__inner">
+      <div class="about__text">
+        <span class="section-tag">Sobre</span>
+        <h2 class="section-title">Quem é<br>O Cavalquinha?</h2>
+        <p>Nascido para fazer você rir até doer, <strong>O Cavalquinha</strong> é um dos nomes que mais cresce no cenário do stand-up comedy brasileiro. Com um humor afiado, observações precisas sobre o cotidiano e uma entrega irresistível no palco, ele transforma situações simples em explosões de gargalhadas.</p>
+        <p>Com uma trajetória construída de microfone em microfone, O Cavalquinha já se apresentou em palcos por todo o Brasil, conquistando uma legião de fãs fiéis e mostrando que o bom humor não tem limite.</p>
+        <a href="https://www.instagram.com/ocavalquinha" target="_blank" rel="noopener" class="btn btn--primary">Me siga no Instagram</a>
+      </div>
+      <div class="about__visual">
+        <div class="about__img-placeholder">
+          <span>🎤</span>
+        </div>
+        <div class="about__quote">
+          <blockquote>"A vida é engraçada. Alguém tem que apontar isso."</blockquote>
+          <cite>— O Cavalquinha</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWS -->
+  <section class="shows" id="shows">
+    <div class="shows__inner">
+      <div class="shows__header">
+        <span class="section-tag">Agenda</span>
+        <h2 class="section-title">Próximos Shows</h2>
+        <p class="section-sub">Garanta seu ingresso antes que esgote!</p>
+      </div>
+      <div class="shows__list">
+
+        <div class="show-card">
+          <div class="show-card__date">
+            <span class="show-card__day">12</span>
+            <span class="show-card__month">ABR</span>
+          </div>
+          <div class="show-card__info">
+            <h3>Show de Stand-Up — Edição Especial</h3>
+            <p class="show-card__venue">Teatro XYZ · São Paulo, SP</p>
+            <p class="show-card__time">Sábado · 20h</p>
+          </div>
+          <a href="#contato" class="btn btn--primary show-card__btn">Ingressos</a>
+        </div>
+
+        <div class="show-card">
+          <div class="show-card__date">
+            <span class="show-card__day">19</span>
+            <span class="show-card__month">ABR</span>
+          </div>
+          <div class="show-card__info">
+            <h3>O Cavalquinha ao Vivo</h3>
+            <p class="show-card__venue">Casa de Shows ABC · Rio de Janeiro, RJ</p>
+            <p class="show-card__time">Sexta-feira · 21h</p>
+          </div>
+          <a href="#contato" class="btn btn--primary show-card__btn">Ingressos</a>
+        </div>
+
+        <div class="show-card">
+          <div class="show-card__date">
+            <span class="show-card__day">03</span>
+            <span class="show-card__month">MAI</span>
+          </div>
+          <div class="show-card__info">
+            <h3>Festival de Humor — Convidado Especial</h3>
+            <p class="show-card__venue">Auditório Principal · Belo Horizonte, MG</p>
+            <p class="show-card__time">Sábado · 19h30</p>
+          </div>
+          <a href="#contato" class="btn btn--primary show-card__btn">Ingressos</a>
+        </div>
+
+      </div>
+      <p class="shows__note">Quer me contratar para um evento privado? <a href="#contato">Fale comigo</a></p>
+    </div>
+  </section>
+
+  <!-- VIDEOS -->
+  <section class="videos" id="videos">
+    <div class="videos__inner">
+      <div class="videos__header">
+        <span class="section-tag">Conteúdo</span>
+        <h2 class="section-title">Assista & Ria</h2>
+        <p class="section-sub">Pequenos clipes, muita gargalhada.</p>
+      </div>
+      <div class="videos__grid">
+        <div class="video-card">
+          <div class="video-card__thumb">
+            <span class="video-card__play">▶</span>
+            <div class="video-card__overlay">Clipe 1</div>
+          </div>
+          <p class="video-card__title">O dia em que tudo deu errado</p>
+        </div>
+        <div class="video-card">
+          <div class="video-card__thumb">
+            <span class="video-card__play">▶</span>
+            <div class="video-card__overlay">Clipe 2</div>
+          </div>
+          <p class="video-card__title">Família brasileira explicada</p>
+        </div>
+        <div class="video-card">
+          <div class="video-card__thumb">
+            <span class="video-card__play">▶</span>
+            <div class="video-card__overlay">Clipe 3</div>
+          </div>
+          <p class="video-card__title">A arte de não fazer nada</p>
+        </div>
+      </div>
+      <div class="videos__cta">
+        <a href="https://www.instagram.com/ocavalquinha" target="_blank" rel="noopener" class="btn btn--outline">Ver mais no Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESS / DEPOIMENTOS -->
+  <section class="testimonials">
+    <div class="testimonials__inner">
+      <span class="section-tag">O que falam</span>
+      <h2 class="section-title">A plateia fala</h2>
+      <div class="testimonials__grid">
+        <div class="testimonial">
+          <p>"Nunca ri tanto na vida. O Cavalquinha é puro talento!"</p>
+          <cite>— João V., São Paulo</cite>
+        </div>
+        <div class="testimonial">
+          <p>"Fui com zero expectativa e saí com dor de barriga de tanto rir. Surreal!"</p>
+          <cite>— Mariana S., Rio de Janeiro</cite>
+        </div>
+        <div class="testimonial">
+          <p>"O melhor show de stand-up que já assisti. Tem que ver ao vivo!"</p>
+          <cite>— Lucas P., Belo Horizonte</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contact" id="contato">
+    <div class="contact__inner">
+      <div class="contact__text">
+        <span class="section-tag">Contato</span>
+        <h2 class="section-title">Bora conversar?</h2>
+        <p>Quer me contratar para um evento, festival ou show privado? Me manda uma mensagem!</p>
+        <ul class="contact__info">
+          <li>
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <a href="https://www.instagram.com/ocavalquinha" target="_blank" rel="noopener">@ocavalquinha</a>
+          </li>
+        </ul>
+      </div>
+      <form class="contact__form" id="contact-form">
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" placeholder="Seu nome" required />
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Assunto</label>
+          <select id="subject" name="subject">
+            <option value="show">Contratar para Show</option>
+            <option value="evento">Evento Corporativo</option>
+            <option value="festival">Festival</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" placeholder="Conta mais sobre o que você precisa..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__logo">O Cavalquinha</p>
+      <p class="footer__copy">© 2026 O Cavalquinha. Todos os direitos reservados.</p>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/ocavalquinha" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
