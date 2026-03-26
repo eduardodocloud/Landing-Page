@@ -781,6 +781,9 @@ ul  { list-style: none; }
   border-radius: 100px;
 }
 .show-card__btn { font-size: 0.82rem; padding: 10px 20px; }
+.show-card--off { opacity: 0.6; }
+.show-card--off .show-card__date { filter: grayscale(1); }
+.show-card__tag--off { color: var(--grey); border-color: rgba(150,150,150,0.3); }
 
 .shows__note {
   text-align: center;
