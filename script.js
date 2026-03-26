@@ -183,3 +183,33 @@ const activeObs = new IntersectionObserver(entries => {
 }, { threshold: 0.5 });
 
 sections.forEach(s => activeObs.observe(s));
+
+// ===========================
+// WHATSAPP FORM SUBMISSION
+// ===========================
+const WA_NUMBER = '5511954597475';
+
+document.getElementById('booking-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name      = document.getElementById('name').value.trim();
+  const whatsapp  = document.getElementById('whatsapp').value.trim();
+  const email     = document.getElementById('email').value.trim();
+  const eventType = document.getElementById('event-type');
+  const eventLabel = eventType.options[eventType.selectedIndex].text;
+  const eventDate = document.getElementById('event-date').value;
+  const message   = document.getElementById('message').value.trim();
+
+  let dateStr = eventDate
+    ? new Date(eventDate + 'T12:00:00').toLocaleDateString('pt-BR') : 'Não informada';
+
+  let text = `Olá, Cavalca! 👋\n\n`;
+  text += `*Nome:* ${name}\n`;
+  text += `*WhatsApp:* ${whatsapp}\n`;
+  text += `*E-mail:* ${email}\n`;
+  text += `*Tipo de evento:* ${eventLabel}\n`;
+  text += `*Data do evento:* ${dateStr}\n`;
+  if (message) text += `*Detalhes:* ${message}\n`;
+
+  const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
+  window.open(url, '_blank');
+});
