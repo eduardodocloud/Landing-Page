@@ -1,4 +1,40 @@
 // ===========================
+// REEL PLAYER
+// ===========================
+document.querySelectorAll('[data-reel]').forEach(overlay => {
+  const player  = overlay.closest('.reel-player');
+  const video   = player.querySelector('.reel-player__video');
+  const btn     = overlay.querySelector('.reel-player__btn');
+  const pauseIcon = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>`;
+  const playIcon  = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>`;
+
+  overlay.addEventListener('click', () => {
+    if (video.paused) {
+      // Pause all other reels first
+      document.querySelectorAll('.reel-player__video').forEach(v => {
+        if (v !== video) {
+          v.pause();
+          v.closest('.reel-player').classList.remove('playing');
+          v.closest('.reel-player').querySelector('.reel-player__btn').innerHTML = playIcon;
+        }
+      });
+      video.play();
+      player.classList.add('playing');
+      btn.innerHTML = pauseIcon;
+    } else {
+      video.pause();
+      player.classList.remove('playing');
+      btn.innerHTML = playIcon;
+    }
+  });
+
+  video.addEventListener('ended', () => {
+    player.classList.remove('playing');
+    btn.innerHTML = playIcon;
+  });
+});
+
+// ===========================
 // NAV — scroll + hamburger
 // ===========================
 const nav        = document.getElementById('nav');
