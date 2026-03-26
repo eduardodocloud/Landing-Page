@@ -611,12 +611,27 @@ ul  { list-style: none; }
   padding: 4px 10px;
   border-radius: 100px;
 }
-.roast__reel-title {
-  background: var(--card);
-  padding: 14px 16px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--white);
+.roast__embed-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--yellow);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+/* Instagram embed wrappers */
+.reel-embed-wrap {
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+.reel-embed-wrap .instagram-media {
+  margin: 0 auto !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  border-radius: var(--radius) !important;
 }
 
 /* ===========================
