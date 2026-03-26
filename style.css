@@ -378,7 +378,7 @@ ul  { list-style: none; }
   color: var(--black);
   line-height: 1;
 }
-.stat__suf {
+.stat__pre, .stat__suf {
   font-family: var(--font-display);
   font-size: 2rem;
   color: var(--black);
